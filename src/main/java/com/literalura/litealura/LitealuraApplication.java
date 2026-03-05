@@ -10,3 +10,4 @@ public class LitealuraApplication {
 		SpringApplication.run(LitealuraApplication.class, args);
 	}
 }
+

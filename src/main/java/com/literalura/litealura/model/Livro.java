@@ -14,14 +14,9 @@ public class Livro {
     private Integer numeroDownloads;
 
     @ManyToOne
-    @JoinColumn(name = "autor_id")
     private Autor autor;
 
     public Livro() {
-    }
-
-    public Long getId() {
-        return id;
     }
 
     public String getTitulo() {
@@ -54,5 +49,15 @@ public class Livro {
 
     public void setAutor(Autor autor) {
         this.autor = autor;
+    }
+
+    @Override
+    public String toString() {
+        return "\n----- LIVRO -----" +
+                "\nTítulo: " + titulo +
+                "\nAutor: " + autor.getNome() +
+                "\nIdioma: " + idioma +
+                "\nDownloads: " + numeroDownloads +
+                "\n-----------------\n";
     }
 }

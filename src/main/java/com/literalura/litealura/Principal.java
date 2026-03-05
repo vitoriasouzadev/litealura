@@ -124,7 +124,8 @@ public class Principal implements CommandLineRunner {
 
             livroRepository.save(livro);
 
-            System.out.println("Livro salvo com sucesso!");
+            System.out.println("\nLivro encontrado:");
+            System.out.println(livro);
 
         } else {
             System.out.println("Livro não encontrado.");

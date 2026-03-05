@@ -16,10 +16,6 @@ public class Autor {
     public Autor() {
     }
 
-    public Long getId() {
-        return id;
-    }
-
     public String getNome() {
         return nome;
     }
@@ -42,5 +38,14 @@ public class Autor {
 
     public void setAnoFalecimento(Integer anoFalecimento) {
         this.anoFalecimento = anoFalecimento;
+    }
+
+    @Override
+    public String toString() {
+        return "\n----- AUTOR -----" +
+                "\nNome: " + nome +
+                "\nAno de nascimento: " + anoNascimento +
+                "\nAno de falecimento: " + anoFalecimento +
+                "\n-----------------\n";
     }
 }
